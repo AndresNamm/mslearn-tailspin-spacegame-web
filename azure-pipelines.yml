@@ -1,5 +1,11 @@
 trigger:
-- '*'
+  branches:
+    include:
+    - '*'
+  paths:
+    exclude:
+    - docs/*
+    - .devcontainer/*
 
 pool:
   vmImage: 'ubuntu-20.04'
