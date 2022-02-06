@@ -28,7 +28,7 @@ steps:
   inputs:
     verbose: false
 
-- script: 'pwd; ls -la '
+- script: 'pwd; ls -la; cat NEW_file.txt'
   displayName: 'Try to understand the situation a bit better'
   
 - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
